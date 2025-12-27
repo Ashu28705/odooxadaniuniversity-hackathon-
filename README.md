@@ -33,12 +33,12 @@ It features intelligent conflict prevention, warranty protection logic, role-bas
 🛠️ Tech Stack
 
 - **Backend:** Python, Flask, SQLAlchemy, Flask-Login, Authlib  
-- **Frontend:** HTML5, Bootstrap 5, Jinja2, JavaScript  
+- **Frontend:** HTML5, CSS, Bootstrap 5, JavaScript , Jinja2
 - **Database:** SQLite (Dev) / PostgreSQL (Prod)  
 - **Charts & Scheduling:** Chart.js, FullCalendar  
 
 ---
-````
+
 
 ## ⚙️ Installation & Setup
 
@@ -114,16 +114,4 @@ GearGuard/
 
 This project is licensed under the **MIT License**.
 
-```
 
----
-
-Now when you paste this on GitHub, **everything will display cleanly**:  
-✔ commands  
-✔ links  
-✔ folder structure  
-✔ headings  
-✔ spacing  
-
-If you want, next I can help you add **screenshots**, **badges**, and **contributor section** to make it look even more professional 🔥
-```
