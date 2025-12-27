@@ -1,67 +1,129 @@
-# 🛠️ GearGuard — The Ultimate Maintenance Tracker
+markdown
+# GearGuard - Smart Maintenance Management System
 
-GearGuard is a web-based **Maintenance Management System** that helps organizations track their equipment, manage maintenance teams, and automate repair workflows.  
-It provides a smart, professional, and Odoo-like solution for handling company assets and maintenance operations.
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)
+![Flask](https://img.shields.io/badge/Flask-2.0-green?style=for-the-badge&logo=flask)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?style=for-the-badge&logo=bootstrap)
+![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)
 
----
-
-## 📌 Project Objective
-
-To build a complete maintenance management platform that connects:
-
-- **Equipment** → What needs repair  
-- **Maintenance Teams** → Who performs the repair  
-- **Maintenance Requests** → The work to be done  
-
-and automates the entire maintenance lifecycle from issue reporting to job completion.
+**GearGuard** is a production-grade **Computerized Maintenance Management System (CMMS)** built to streamline equipment repairs, preventive maintenance, and asset lifecycle tracking.  
+It features intelligent conflict prevention, warranty protection logic, role-based dashboards, and visual workflow management.
 
 ---
 
-## 👥 User Roles
+## 🚀 Key Features
 
-| Role | Responsibilities |
-|-----|----------------|
-**Admin / Manager** | Manage equipment, teams, technicians, scheduling |
-**Employee (User)** | Report equipment issues |
-**Technician** | Perform repairs & update request status |
+### 🧠 Smart Intelligence
+- **Duplicate Ticket Prevention**
+- **Warranty Protection Logic**
 
----
+### 👤 User Experience
+- **Role-Based Access Control**
+- **OAuth Social Login (Google & GitHub)**
+- **Modern Glassmorphism UI**
 
-## 🧱 Core Modules
-
-### 1. Equipment Module
-
-Stores complete details of company assets.
-
-**Fields**
-- Equipment Name & Serial Number  
-- Department & Assigned Employee  
-- Physical Location  
-- Purchase Date & Warranty Expiry  
-- Assigned Maintenance Team  
-- Default Technician  
-
-**Features**
-- Search & filter by department or employee  
-- Smart **Maintenance Button** showing open request count
+### 🛠️ Admin Power Tools
+- **Kanban Workboard**
+- **Visual Scheduler**
+- **Analytics Dashboard**
+- **CSV Data Export**
 
 ---
 
-### 2. Maintenance Team Module
+🛠️ Tech Stack
 
-- Create specialized teams (IT, Mechanics, Electricians, etc.)
-- Assign technicians to teams
-- Enforces team-based request handling
+- **Backend:** Python, Flask, SQLAlchemy, Flask-Login, Authlib  
+- **Frontend:** HTML5, Bootstrap 5, Jinja2, JavaScript  
+- **Database:** SQLite (Dev) / PostgreSQL (Prod)  
+- **Charts & Scheduling:** Chart.js, FullCalendar  
+
+---
+````
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/YOUR_USERNAME/GearGuard.git
+cd GearGuard
+````
+
+### 2️⃣ Create Virtual Environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Initialize Database
+
+```bash
+python reset_db.py
+```
+
+### 5️⃣ Run Application
+
+```bash
+python app.py
+```
+
+Open in browser:
+
+```
+http://127.0.0.1:5000
+```
 
 ---
 
-### 3. Maintenance Request Module
+## 📂 Project Structure
 
-Manages the full lifecycle of maintenance work.
+```
+GearGuard/
+├── app.py                 # Main controller & routes
+├── config.py              # Configuration settings
+├── reset_db.py            # Database initialization
+├── requirements.txt       # Python dependencies
+│
+├── models/
+│   ├── db.py
+│   ├── user.py
+│   ├── equipment.py
+│   └── request.py
+│
+├── static/
+│   ├── css/
+│   └── uploads/
+│
+└── templates/
+    ├── auth/
+    ├── layouts/
+    ├── requests/
+    ├── equipment/
+    ├── dashboard_admin.html
+```
 
-**Request Types**
-- Corrective (Breakdown)
-- Preventive (Routine Maintenance)
+---
 
-**Workflow Stages**
+## 🧾 License
 
+This project is licensed under the **MIT License**.
+
+```
+
+---
+
+Now when you paste this on GitHub, **everything will display cleanly**:  
+✔ commands  
+✔ links  
+✔ folder structure  
+✔ headings  
+✔ spacing  
+
+If you want, next I can help you add **screenshots**, **badges**, and **contributor section** to make it look even more professional 🔥
+```
